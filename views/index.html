@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node.js REST API</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+    <style>
+        body h1, h2, h3, h4, h5, h6, p, span {
+            font-family: 'Noto Serif', serif;
+            color: #333;
+        }
+        body li, a {
+            font-family: 'Noto Serif', serif;
+            color: #333;
+        }
+        .card-body {
+            padding-bottom: 20px;
+            padding-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="orange darken-4">
+        <div class="nav-wrapper container">
+            <a href="/" class="brand-logo">Node.js</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="https://facebook.com/itsrafsanjani" target="_blank">Facebook</a></li>
+                <li><a href="https://twitter.com/itsrafsanjani" target="_blank">Twitter</a></li>
+                <li><a href="https://github.com/itsrafsanjani" target="_blank">Github</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3>Hello There, It's my first Node.js App for REST API.</h3>
+                <p>You can request <b>baseSiteUrl+'/posts'</b> and use GET, POST, PATCH/PUT, DELETE to get a JSON
+                    response.</p>
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title">Example: GET:</span>
+                        <div class="card-body">
+                            <a title="get posts" href="https://nodejs-api-testing.herokuapp.com/posts" class="orange-text text-darken-4">
+                                https://nodejs-api-testing.herokuapp.com/posts
+                            </a>
+                        </div>
+                        <code>
+                            [
+                                {
+                                    "_id": "5fa156049d94f3304042c893",
+                                    "title": "my 4th changed post",
+                                    "description": "This also changed",
+                                    "date": "2020-11-03T13:07:16.810Z",
+                                    "__v": 0
+                                },
+                                {
+                                    "_id": "5fab7b21891f161af407df98",
+                                    "title": "my 5th changed post",
+                                    "description": "This 5th also changed",
+                                    "date": "2020-11-11T05:48:17.114Z",
+                                    "__v": 0
+                                }
+                            ]
+                        </code>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
