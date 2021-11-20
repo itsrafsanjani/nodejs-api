@@ -7,7 +7,7 @@
     "test": "npm start",
     "start": "nodemon app.js"
   },
-  "author": "Md. Rafsan Jani RAfin",
+  "author": "Md. Rafsan Jani Rafin",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
